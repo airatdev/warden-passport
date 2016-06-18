@@ -1,7 +1,4 @@
 require "warden/passport/version"
+require "warden/passport/strategy"
 
-module Warden
-  module Passport
-    # Your code goes here...
-  end
-end
+Warden::Strategies.add(:passport, Warden::Passport::Strategy)
